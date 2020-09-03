@@ -22,8 +22,9 @@ def assembled_matrix
   # Organic standards require that organic products be stored ABOVE conventional, not the other way around
   # Make sure conventional produce is first, on the 'zeroth' / 'bottom' shelf
   produce = [
-    ORGANIC_PRODUCE,
-    CONVENTIONAL_PRODUCE
+    CONVENTIONAL_PRODUCE,
+    ORGANIC_PRODUCE
+  
    ]
    produce
 end
@@ -33,10 +34,11 @@ def sorted_matrix
   # uses the arrays of conventional and organic produce as before.
   # However, this time, sort each internal array alphabetically by the first character
  produce = [
-    ORGANIC_PRODUCE.sort ,
-    CONVENTIONAL_PRODUCE.sort
+    CONVENTIONAL_PRODUCE.sort,
+    ORGANIC_PRODUCE.sort
+  
    ]
-produce
+   produce
 end
 
 def matrix_lookup(matrix, row, column)
